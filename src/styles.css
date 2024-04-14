@@ -1,0 +1,104 @@
+/*
+*      Name:       Francesca Ysabelle Galang
+*      Student ID: 101257236
+*      Date:       April 13, 2024
+*/
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+
+html{
+    display: flex;
+    justify-content: center;
+}
+body{
+    width: 70%;
+    justify-content: space-around;
+}
+#meal {
+    display: flex;
+    justify-content: column;
+    flex-wrap: wrap; /* Allow cards to wrap to the next line if needed */
+    gap: 20px; /* Add some spacing between cards */
+    width: 100%;
+} 
+
+.card {
+    width: 225px;
+    height: 330px;
+    background-color: whitesmoke;
+    overflow: hidden;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Add padding to individual cards */
+    position: relative;
+}
+
+.card:hover{
+    background-color: lightblue;
+}
+
+.card h3 {
+    margin: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    height: 200%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card button {
+    height: 50px;
+}
+
+.card img {
+    width: 100%;
+    max-height: 200px; /* Set a maximum height for the image */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+#category-div{
+    display: flex;
+    gap: 20px;
+}
+
+
+.meal{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.meal img{
+    max-height: 400px;
+}
+
+.randMealDiv{
+    display: flex;
+    flex: 1;
+    justify-content: column;
+}
+
+h4{
+    color: #118bee;
+}
+
+.recipeDiv{
+    flex: 1;
+}
+
+.recipeDiv a{
+    font-size: larger;
+}
+
+.randMealDiv .recipeDiv{
+    display: inline-block;
+}
+
+select {
+    width: 200px;
+}
